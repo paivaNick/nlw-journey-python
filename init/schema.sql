@@ -19,5 +19,6 @@ create table if not exists 'links' (
   id text primary key,
   trip_id text,
   link text not null,
+  title text not null,
   foreign key (trip_id) references trips(id)
 )

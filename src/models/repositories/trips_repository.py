@@ -42,7 +42,7 @@ class TripsRepository:
         cursor = self.__conn.cursor()
         cursor.execute(
                 """
-                UPDATE trips 
+                UPDATE trip 
                     SET status = 1
                 WHERE 
                     id = ?
