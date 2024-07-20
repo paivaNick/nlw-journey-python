@@ -32,7 +32,7 @@ class EmailsToInviteRepository:
 
                 """, (trip_id,)
                 )
-        trip = cursor.fetchall()
-        return trip
+        email = cursor.fetchall()
+        return email
 
 
