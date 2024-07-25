@@ -4,7 +4,7 @@ class TripConfirmer:
         self.__trips_repository = trips_repository
 
     def confirm(self,trip_id):
-        try: 
+        try:
             self.__trips_repository.update_trip_status(trip_id)
             return {
                     "body": {
@@ -18,4 +18,3 @@ class TripConfirmer:
                         },
                         "status_code": 400
                         }
-
